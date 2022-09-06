@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "ArialRounded";
+  font-display: swap;
+  src: url("/fonts/ArialRounded/Arial_Rounded_MT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ArialRounded";
+  font-display: swap;
+  src: url("/fonts/ArialRounded/Arial-Rounded-MT-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
 body {
   display: block;
   margin: 0;
@@ -84,4 +96,90 @@ div {
 
 .button-icon {
   width: 16px;
+}
+
+.main-container {
+  padding: 0px 12px;
+  max-width: 620px;
+  margin: auto;
+}
+
+.timer-container {
+  text-align: center;
+}
+
+.container-padding-top {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 1px;
+  margin-bottom: 40px;
+}
+
+.container-shadow-top {
+  height: 3px;
+  background-color: white;
+  border-radius: 100px;
+  transform: translateY(-1px);
+  width: 0%;
+}
+
+.timer-content {
+  max-width: 480px;
+  margin: auto;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 0px 30px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.timer-buttons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-button {
+  border: none;
+  margin: 0px;
+  border-radius: 4px;
+  font-family: ArialRounded;
+  font-size: 16px;
+  padding: 2px 12px;
+  height: 28px;
+  cursor: pointer;
+  background: none rgba(255, 255, 255, 0.2); /* rgba(255, 255, 255, 0.2) */
+  box-shadow: none;
+  color: white;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.timer-button:active {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+#timer-string {
+  font-size: 120px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.start-button {
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  box-shadow: rgb(235 235 235) 0px 6px 0px;
+  font-family: ArialRounded;
+  font-size: 22px;
+  height: 55px;
+  color: rgb(217, 85, 80);
+  font-weight: bold;
+  width: 200px;
+  background-color: white;
+  transition: color 0.5s ease-in-out 0s;
 }
