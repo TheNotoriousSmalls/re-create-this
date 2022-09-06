@@ -49,10 +49,15 @@ div {
   font-size: 20px;
 }
 
-/* 
+.logo-icon {
+  width: 20px;
+  margin-right: 4px;
+}
+
 .logo a {
   color: white;
-} */
+  text-decoration: none;
+}
 
 .buttons {
   display: flex;
@@ -75,4 +80,8 @@ div {
   min-width: 70px;
   border: none;
   color: white !important;
+}
+
+.button-icon {
+  width: 16px;
 }
